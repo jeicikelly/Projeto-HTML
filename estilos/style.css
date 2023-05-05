@@ -10,6 +10,9 @@ body{
     background-color: rgb(15, 16, 31);
 }
 
+header{
+    text-align: center;
+}
 
 div.cont{
     background-color: aquamarine;

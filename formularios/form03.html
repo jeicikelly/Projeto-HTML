@@ -9,15 +9,45 @@
 </head>
 <body>
     <header>
-        <h1>Primeiro Formulário</h1>
+        <h1>Formulários</h1>
         <nav>
             <a href="form01.html">1º Form.</a>
             <a href="form02.html">2º Form.</a>
             <a href="form03.html">3º Form.</a>
-            <a href="#">conteudo 04</a>
+            <a href="form04.html">4º Form.</a>
+            <a href="form05.html">5º Form.</a>
         </nav>
     </header>
     <main>
+        <article> <h2>Fomulário com Número e Data</h2>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+                </p>
+                <p>
+                    <label for="imedia">Média:</label>
+                    <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
+<!--(MIN-MAX) o intervalo de números que podem ser usados
+    (STEP) de quanto e quanto pode aumentar ou reduzir o numero, podendo escolher um intervalo menor que 1-->
+                </p>
+                <p>
+                    <label for="iperio">Período Letivo:</label>
+                    <input type="month" name="perio" id="iperio" value="2023-05">
+<!--(input-MONTH) para escolher o mês e o ano
+    (VALUE) nesse caso para o input já aprarecer com um valor preenchido-->
+                </p>
+                <p>
+                    <label for="idia">Dia da Prova:</label>
+                    <input type="date" name="dia" id="idia" value="2023-05-05">
+<!--(DATE) para dia-mês-ano -->
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </article>
 
         <aside>
             <h3>Espie aqui!</h3>
