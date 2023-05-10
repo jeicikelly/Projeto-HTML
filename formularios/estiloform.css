@@ -6,9 +6,25 @@
     padding: 3px 1px;
 }
 
+a{
+    font-weight: bolder ;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration:underline dotted blue;
+    color:blue;
+}
+a:active{
+    color: darkblue;
+    text-decoration: underline dotted darkblue;
+}
+
 body{
     padding: 1% 5% ;
 }
+
+
 
 .obr{
     color: red;
@@ -34,9 +50,10 @@ main{
 }
 
 article{
-    margin: 5px;
-    padding-bottom: 5px ;
-    background-color: snow;
+    margin: 10px 5px;
+    padding: 5px 10px ;
+    border-radius: 20px;
+    background-color: rgba(173, 216, 230, 0.473);
 }
 
 footer{
